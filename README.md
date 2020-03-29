@@ -69,4 +69,4 @@
 * **State is similar to props**, but it is **private and fully controlled by the component**.
 * **It is not accessible to any component other than the one that owns and sets it.**
 
-![state](state.jpg)
+![state](images/state.jpg)
