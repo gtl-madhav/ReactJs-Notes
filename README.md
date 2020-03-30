@@ -266,13 +266,13 @@ Use Cases —
 
 * Its Atom Approach to the design of the components 
 
-* Atoms -> The smallest components that are responsible for one specific function - button with label, text fields, etc..
+* `Atoms` -> The smallest components that are responsible for one specific function - button with label, text fields, etc..
 
-* Molecule -> Is the component that includes several Atom Components, but its is not the fullest one. A molecule may be modal window or button with an icon inside. 
+* `Molecule` -> Is the component that includes several Atom Components, but its is not the fullest one. A molecule may be modal window or button with an icon inside. 
 
-* Organisms -> are usually components responsible for the specific function of the application. For example, registration form, table with data and filters. 
+* `Organisms` -> are usually components responsible for the specific function of the application. For example, registration form, table with data and filters. 
 
-## Honestly, sometimes it is not so easy to divide components into these three groups, but with arc.js you can easily transfer these components between the groups.
+### Honestly, sometimes it is not so easy to divide components into these three groups, but with arc.js you can easily transfer these components between the groups.
 
 ### The structure of the skeleton is the following:
 
