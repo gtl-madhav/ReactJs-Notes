@@ -213,6 +213,56 @@
   * Using mutable data structures could results in unnecessary data copying due to a nested Redux state tree which consumes lot of device memory and slows down the React app performance.
   * On the other hand, immutating data structures in Redux based React app ensures that all operations of app returns a newer version of data structure and keep the original data structure intact instead of updating it.
   
+###  Use Cases of React Js.
+
+ React js
+
+1. Virtual DOM
+2. Server side rending 
+3. Single Page apps
+4. Component Based structure 
+5. Unidirectional data flow
+6. Easy to learn 
+7. Unique Abstraction Layer  -> which means an end-user can’t access the complex internals
+8. Community and Developer Ecosystem 
+9. LinkedIn Example - server-side-rendering
+10. GoogleBot is now capable of indexing client side rendered pages by running javascript.
+11. React, with Websockets makes real-time data processing easier for Social networks.
+    1. the two-way communication between client and server will establish without any need to refresh the web page continuously. What’s more, the server will be able to receive real-time data from the client over the same connection. One part of this connection also deals with additional features like broadcasting to multiple sockets, storing data for each client, and asynchronous I/O. 
+12. So, if your web app experiences any single point of failure, your developer can still make it up and running as other features may still be working. 
+13. Component reusability makes eCommerce code maintenance easier with React
+14. State management in React gives immense performance benefits for eCommerce
+15. Single-page applications catering to multiple industries
+
+Use Cases — 
+
+* Blogs (Gatsby)
+* Business websites
+* Portfolios
+* Forums
+* Rating websites
+* Membership sites
+* eLearning modules
+* Galleries
+* Personal websites for self-promotion
+* Job boards
+* Business directories
+* Q&A websites like Quora
+* Non-profit websites for collecting donations
+* Wikis and knowledge bases
+* Media-centric sites like YouTube
+* Auction and coupon sites
+* Dashboards or data visualization tools, 
+* Isomorphic javascript allows quick rendering of web pages, 
+* Social Networks , Ecommerce or retail , 
+* An app like Trello is the best example of a single page navigation. 
+    * —> such type of navigation can be implemented by a technique called as routing.—> React offers a library called React-router, which provides routing capabilities in SPAs.
+
+    * Poor SEO: A web application that runs only on the client-side can’t serve HTML to crawlers. This leads to poor SEO by default, which is a serious concern if your business depends on organic traffic to generate more revenue. 
+    * Bad Performance: If a web application such as dashboard depends upon client-side javascript to render a full-page HTML, your users will experience a few critical seconds of the blank page before loading the content on screen. It affects the performance of your application, which is very valuable in terms of revenue gains.
+    * High Maintainability: While the simplest use-case to the client-side rendering approach might work well for your business, there can be times when your developer ends up duplicating some application logic or view logic between client and server. Common examples include date and currency formatting, form validations, and routing logic. It makes maintenance of complex apps a nightmare, mainly when your whole business depends on it. 
+  
   `Source` :: https://www.simform.com/react-performance/ </br>
   `Source`:: https://www.simform.com/websites-use-react/ </br>
   `Source`:: https://www.simform.com/use-nodejs-with-react/ </br>
+  `Source` :: https://www.simform.com/why-use-react/#reactjs-uses
