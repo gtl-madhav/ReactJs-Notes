@@ -71,6 +71,40 @@
 
 ![state](images/state.jpg)
 
+### -- Summery Of Performace issues. --
+
+1. Virtual DOM - also update entire sub tree
+2. To-Do Example
+3. Chrome Extension
+4. Why did you update Library
+5. shouldComponentUpdate method
+6. Twitter Example 
+7. PureComponent
+8. Single Character Search Example 
+9. Immutable.js
+10. PWA - React - Bundle size 
+11. Webpack bundle analyzer
+12. Gzip compression
+13. Code Splitting 
+14. Lazy-Load 
+15. Pinterest Example 
+16. CommonChunkPlugin web pack 
+17. SSR server side rendering with Next.js
+18. Housing.com example 
+19. Lazy Login Image 
+20. Pinterest for Lazy loving image
+21. React Lazy-load library 
+22. Long List with 10000+ date
+23. Scrolling make UI memory issues 
+24. React Virtualised List - just like recycler view in android 
+25. correct keys for components
+26. React - Redux based performance issues 
+27. RESELECT library - for Redux Based React Apps. handling the complex rendering operations.
+28. Using Immutable.js to further optimize performance issues in Redux based React apps
+29. mutable data structures could results in unnecessary data copying due to a nested Redux state tree
+30. immutating data structures in Redux based React app ensures that all operations of app returns a newer version of data structure and keep the original data structure intact instead of updating it.
+
+
 ### Advance Performance issues Discusstion and solution 
 
 ## How UI is rendered in React? (Advantage)
