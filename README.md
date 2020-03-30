@@ -292,8 +292,54 @@ Use Cases —
 
 * Store/resource folder contains everything that is necessary to interact with api through redux-saga.
 
+### Flux React
+
+* Flux is a new kind of architecture that Facebook uses when it works with React
+* Flux, a programming pattern, takes care of that
+* It is the architecture responsible for creating data layers in JavaScript applications and building client-side web applications
+* Flux complements React’s Composable view components through its unidirectional data flow
+* You can also say that Flux is more of a pattern than a framework
+* Flux is Open Source 
+
+- 4 main components
+    - Dispatcher
+    - Stores
+    - Views (React components)
+    - Action
+- There are Controllers, but they are mostly Controller views
+- Views are at the top of the hierarchy and they retire the data and functionality and pass them down to their children.
+- Flux follows the concept of unidirectional data flow making it much easier to zero in on where the error lies.
+- The data goes through a strict pipeline through your application
+- React and Flux are actually two of the most popular frameworks that follow the concept of unidirectional data flow.
+
+ 
+1. While React makes uses of a virtual DOM object to render changes
+2.  Flux does it differently. In Flux, the interactions with the user interface will trigger a series of actions that would alter the application data. 
+3. The View will get alerts on the changes
+4. Flux keeps code predictable when compared to other MVC frameworks
+5. Flux boasts of a better-structured data flow – unidirectional.
 
 
+* Model - Maintains the behavior and data of an application domain.
+* View - The display of the model in UI.
+* Controller - Uses the user input, manipulates the model, and updates the view.
+
+* The Flow - Flux is quite strict about the flow of the application. The data Dispatcher puts forth some strict rules and exceptions to govern the flow. 
+* Unidirectional Flow in Flux 
+* Store - While MVC cannot model single objects, Flux can do it to store any application-related data. 
+
+### Flux Application Architecture
+
+ * In a typical Flux architecture, you will find the following components:
+
+`Actions` - Helpers that pass data to the Dispatcher.
+
+`Dispatcher` - Receives these Actions and broadcasts payloads to registered callbacks.
+
+`Stores` - Act as containers for application state and logic. The real work in the application is done in the 
+Stores. The Stores are registered to listen in on the actions of the Dispatcher and update the Views according to these actions.
+
+`Controller Views` - React Components grab the state from the stores and then pass it down to the child components.
   
   `Source` :: https://www.simform.com/react-performance/ </br>
   `Source`:: https://www.simform.com/websites-use-react/ </br>
