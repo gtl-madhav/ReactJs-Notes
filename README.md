@@ -213,4 +213,4 @@
   * Using mutable data structures could results in unnecessary data copying due to a nested Redux state tree which consumes lot of device memory and slows down the React app performance.
   * On the other hand, immutating data structures in Redux based React app ensures that all operations of app returns a newer version of data structure and keep the original data structure intact instead of updating it.
   
-  
+  `Source` :: https://www.simform.com/react-performance/
