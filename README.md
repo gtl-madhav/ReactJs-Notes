@@ -340,6 +340,50 @@ Use Cases —
 Stores. The Stores are registered to listen in on the actions of the Dispatcher and update the Views according to these actions.
 
 `Controller Views` - React Components grab the state from the stores and then pass it down to the child components.
+
+### 5 React Architecture Best Practices
+
+1. Directory Layout 
+
+/src
+  /actions
+    /notifications.js
+      
+ /components 
+    /Header
+    /Footer
+    /Notifications
+      /index.js
+  /containers
+    /Home
+    /Login
+    /Notifications
+      /index.js
+  /images
+    /logo.png
+  /reducers 
+    /login.js
+    /notifications.js
+  /styles 
+    /app.scss
+    /header.scss 
+    /home.scss
+    /footer.scss
+    /notifications.scss
+  /utils
+  index.js 
+
+
+1. CSS in JavaScript
+2. Higher-order Components (HOCs)
+    1.  A higher-order component (HOC) is basically a function that receives a React component as parameter and returns another React component. 
+3. Function as Children
+    1. How do you render the collapse button?
+    2. it illustrates a good use case for the Function as children pattern.
+    3. You simply pass a function as children, which gets called in the component’s render function. You might also have seen this technique referred to as a “render callback” or in special cases, as a “render prop”.
+4. Render Props
+    1. The basic idea here is to pass a React component within a callable function as a property and call this function within the render function.
+
   
   `Source` :: https://www.simform.com/react-performance/ </br>
   `Source`:: https://www.simform.com/websites-use-react/ </br>
