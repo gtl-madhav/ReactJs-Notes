@@ -261,8 +261,42 @@ Use Cases —
     * Poor SEO: A web application that runs only on the client-side can’t serve HTML to crawlers. This leads to poor SEO by default, which is a serious concern if your business depends on organic traffic to generate more revenue. 
     * Bad Performance: If a web application such as dashboard depends upon client-side javascript to render a full-page HTML, your users will experience a few critical seconds of the blank page before loading the content on screen. It affects the performance of your application, which is very valuable in terms of revenue gains.
     * High Maintainability: While the simplest use-case to the client-side rendering approach might work well for your business, there can be times when your developer ends up duplicating some application logic or view logic between client and server. Common examples include date and currency formatting, form validations, and routing logic. It makes maintenance of complex apps a nightmare, mainly when your whole business depends on it. 
+    
+ ### Arc.js Architecture 
+
+* Its Atom Approach to the design of the components 
+
+* Atoms -> The smallest components that are responsible for one specific function - button with label, text fields, etc..
+
+* Molecule -> Is the component that includes several Atom Components, but its is not the fullest one. A molecule may be modal window or button with an icon inside. 
+
+* Organisms -> are usually components responsible for the specific function of the application. For example, registration form, table with data and filters. 
+
+## Honestly, sometimes it is not so easy to divide components into these three groups, but with arc.js you can easily transfer these components between the groups.
+
+### The structure of the skeleton is the following:
+
+* Components folder is responsible for the storage of all the components (atoms, molecules, organisms). The folder also includes pages, templates, themes and, in particular, contains the main entry of the project — index.js and App.js. In this folder, dumb components are placed as well.
+
+* Dumb component is a component that has no business logic, operating only with actions and modifying its simplest state (if necessary) to change its appearance.
+
+* Containers is a folder that contains smart components that are responsible for the state management and actions dispatching. 
+
+* Smart component dispatches actions, gets action results from the state and maps statuses of errors or data loading. In simple words, smart components contain the meaningful information that is not available for dumb component. Smart component covers dumb one and endows additional skills to it according to the “decorator” pattern principle.
+
+* Services/api folder has necessary methods to work with REST API, i.e. in this case, the simplest implementation of error handling and the usage of “fetch” to make requests to the server.
+
+* Services/validation folder contains all necessary validators to check the correctness of the data (may be used together with redux-form)
+
+*  Store/entities folder has introduction of schemes, middleware for processing of api data and their transformation into the entity, that is convenient for the further usage. This is implemented through normalizr (you can read about this in details here: https://github.com/paularmstrong/normalizr). It is very cool mechanism for two-side mapping, especially if it is necessary to change the way how the data is presented for display. Herewith, it sends the data to the server as it was before. Irreplaceable tool.
+
+* Store/resource folder contains everything that is necessary to interact with api through redux-saga.
+
+
+
   
   `Source` :: https://www.simform.com/react-performance/ </br>
   `Source`:: https://www.simform.com/websites-use-react/ </br>
   `Source`:: https://www.simform.com/use-nodejs-with-react/ </br>
-  `Source` :: https://www.simform.com/why-use-react/#reactjs-uses
+  `Source` :: https://www.simform.com/why-use-react/#reactjs-uses </br>
+  `Source` :: https://blog.maddevs.io/best-architecture-for-the-react-project-149b377b379d
